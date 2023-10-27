@@ -500,13 +500,14 @@
       </div>
       <div class="footer-form-container">
         <form class="footer-form">
-          <label for="user-email" class="footer-label">Subscribe</label>
-          <input
+          <label class="footer-label">Subscribe
+            <input
              type="email"
-            id="user-email"
-            class="footer-input"
-            placeholder="E-mail"
-          />
+             class="footer-input"
+             placeholder="E-mail"
+            />
+          </label>
+          
           <button  type="submit" class="footer-form-btn">
             Subscribe
             <svg class="footer-form-icon" width="24" height="24">
@@ -553,12 +554,14 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label" for="user-text">Comment</label>
-              <textarea class="modal-textarea" name="user-text" id="user-text" placeholder="Text input"></textarea>
+            <label class="modal-label" for="user-comment">Comment</label>
+              <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
             </div>
             <div class="modal-field">
-              <input class="check-input" type="checkbox" name="modal-check" id="modal-check">
-              <label class="check-label" for="modal-check"> <span></span> I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a></label>
+              <input class="check-input visually-hidden" type="checkbox" name="modal-check" id="modal-check">
+              <label class="check-label" for="modal-check"> <span><svg width="16" height="16">
+                <use href="./images/icons.svg#icon-property"></use>
+              </svg></span> I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a></label>
             </div> 
           <button type="submit">Send</button>
         </form>
